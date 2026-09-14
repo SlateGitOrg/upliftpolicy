@@ -2,6 +2,22 @@
 
 > Retention targeting by uplift with doubly-robust policy evaluation, including the customers your outreach drives away.
 
+## Live deployment
+
+[![CI and deployment](https://github.com/SlateGitOrg/upliftpolicy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SlateGitOrg/upliftpolicy/actions/workflows/ci.yml)
+
+[Open the interactive Uplift Policy demo](https://slategitorg.github.io/upliftpolicy/)
+
+The deployed interface uses a deterministic offline scenario to make the repository's tested decision rule visible without external services or private data.
+
+### Desktop
+
+![Uplift Policy desktop deployment](docs/assets/deployed-desktop.png)
+
+### Mobile
+
+<img src="docs/assets/deployed-mobile.png" alt="Uplift Policy mobile deployment" width="390">
+
 > **Implementation note.** The runnable reference is pure Python standard library: logistic regression by hand-written IRLS instead of scikit-learn, a T-learner and a transformed-outcome learner instead of EconML's X-/R-learners and causal forest, and a synthetic generator only. Criteo-UPLIFT / Hillstrom validation, DuckDB, the FastAPI scoring service and Docker remain the target, not the reference. The expected-value calculation is printed by the demo instead of served over HTTP.
 
 `FLAGSHIP` · **AI / ML Engineering** · Expert · ~5-6 weeks · Telecom / subscription fintech
